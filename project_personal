@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>landing-page</title>
+    <link href="project-style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <!-- title content/header -->
+    <h1>Landing Page!</h1>
+    <h2>Hannah Hudson's Project for CSIS 304</h2>
+
+    <!-- the next page elements start here -->
+    <!-- the idea is that each section can be a "blog" entry potentially? -->
+    <div>
+        <a href="page_one.html">Page One Title</a>
+        <p>description of page one here</p>
+    </div>
+    <br>
+
+    <div>
+        <a href="page_two.html">Page Two Title</a>
+        <p>description of page two here</p>
+    </div>
+    <br>
+
+    <div>
+        <a href="page_three.html">Page Three Title</a>
+        <p>description of page three here</p>
+    </div>
+    <br>
+</body>
