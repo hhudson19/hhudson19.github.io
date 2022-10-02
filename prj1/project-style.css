@@ -6,6 +6,12 @@
     font-size: 16px;
 }
 
+header {
+    display: flex;
+    border: 1px gray solid;
+    padding: 5px;
+}
+
 h1 {
     /* pick a font and a size */
     /* style it large in a nice font in the center of the document */
