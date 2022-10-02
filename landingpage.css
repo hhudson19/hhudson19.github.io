@@ -1,1 +1,204 @@
-# css here
+/*css document*/
+
+* {
+    /* pick a font for the whole document? */
+    font-family: Candara, serif;
+    font-size: 100%;
+}
+
+body {
+    /* remove pesky margin */
+    margin: 0px;
+}
+
+.mainimage {
+    /* the box for the image on the main page */
+    width: 50%;
+    margin: 40px;
+}
+
+.aboutmeimage {
+    /* the box for the image on the about me page */
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+img {
+    /* applies to all pages */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+header {
+    /* applies to all pages */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+  /* biggest text/title for each page */
+  font-family: "Book Antiqua", serif;
+  display: flex;
+  justify-content: center;
+  font-size: 250%;
+  margin: 2%;
+  margin-bottom: 0.5%;
+  padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.header {
+    /* class of a div around the menu links */
+    border-top: 1px grey solid;
+    border-bottom: 1px grey solid;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.header > h2 {
+    /* specifically the menu h2 */
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0;
+}
+
+h2 {
+    /* applies to all h2 text */
+    font-size: 120%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.columndiv {
+    /* applies to div section in main page, could be multi use */
+    width: 50%;
+    margin: 40px;
+}
+
+.a {
+  /* in the main page, the first paragraph */
+  text-align: left;
+  padding-right: 20%;
+  margin-top: 2%;
+  margin-bottom: 18%;
+}
+
+.b {
+  /* in the main page, the middle paragraph */
+  text-align: right;
+  padding-left: 20%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.c {
+  /* in the main page, the third paragraph */
+  text-align: left;
+  padding-right: 15%;
+  padding-left: 5%;
+  margin-top: 18%;
+  margin-bottom: 2%;
+}
+
+.d {
+    /* top paragraph on project page */
+    text-align: right;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.e {
+    /* bottom paragraph on project page */
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.f {
+    /* only paragraph on the knitting page */
+    text-align: left;
+    padding-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 30%;
+}
+
+.aboutme {
+  /* in the about me page paragraph */
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+p {
+    /* all p in the website */
+    color: grey;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer > p {
+    /* only the p for the footer */
+    border: none;
+    color: white;
+    font-size: 80%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.main {
+    /* items with class main need to be flex containers and */
+    /* organize them side by side (the default) */
+    display: flex;
+    margin-top: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 5%;
+}
+
+.column {
+    /* like .main, but  *c o l u m n*  */
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-bottom: 7%;
+}
+
+footer {
+    /* applies to all pages */
+    background-color: grey;
+    border: 1px grey solid;
+}
+
+ul {
+    /* used in projects, should have a layout? */
+    color: grey;
+    margin: 0%;
+    padding-left: 2%;
+}
+
+table {
+    /* if the table needs formatting */
+    margin-top: 2%;
+    margin: 10%;
+    width: 80%;
+}
