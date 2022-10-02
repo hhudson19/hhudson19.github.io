@@ -13,6 +13,7 @@ img {
 header {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     border: 1px green solid;
     padding: 5px;
 }
