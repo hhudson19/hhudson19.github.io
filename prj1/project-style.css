@@ -1,9 +1,48 @@
 /*css document*/
 
 * {
+    // pick a font for the whole document?
     font-family: "Times New Roman" "Georgia" serif;
     font-size: 16px;
-    font-weight: normal;
-    font-style: italic;
-    font-variant: small-caps;
+}
+
+h1 {
+    //pick a font and a size
+    //style it large in a nice font in the center of the document
+}
+
+h2 {
+    //pick a font and a size
+}
+
+p {
+    // font color ought to be different here
+}
+
+span {
+    // the menu items are each within a span within an h2
+    // they should be evenly separated and centered as a whole
+    // the box they are in should have a border above and below
+}
+
+.main {
+    // items with class main need to be flex containers and
+    // organize them side by side
+}
+
+.column {
+    // items with class column need to be flex containers and
+    // organize them side by side
+}
+
+footer {
+    // has a verse, should probably be a certain color and a certain size
+}
+
+ul {
+    // used in projects, should have a layout?
+}
+
+table {
+    // if the table needs formatting
 }
