@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+body {
+    /* give the body padding on each side */
+}
+
 img {
     width: 300px;
 }
@@ -21,35 +25,44 @@ header {
 h1 {
     /* pick a font and a size */
     /* style it large in a nice font in the center of the document */
-    font-size: 120%;
+    font-size: 150%;
 }
 
 h2 {
     /* pick a font and a size */
+    display: flex;
+    justify-content: space-around;
+    font-size: 110%
 }
 
 p {
     /* font color ought to be different here */
+    color: grey;
 }
 
 span {
     /* the menu items are each within a span within an h2 */
     /* they should be evenly separated and centered as a whole */
     /* the box they are in should have a border above and below */
+    border-top: 1px green solid;
+    border-bottom: 5px green solid;
 }
 
 .main {
     /* items with class main need to be flex containers and */
     /* organize them side by side */
+    display: flex;
 }
 
 .column {
-    /* items with class column need to be flex containers and */
-    /* organize them side by side */
+    /* items with class column need to be flex containers */
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
     /* has a verse, should probably be a certain color and a certain size */
+    color: blue;
 }
 
 ul {
