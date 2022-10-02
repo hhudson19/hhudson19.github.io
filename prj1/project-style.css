@@ -8,6 +8,7 @@
 
 header {
     display: flex;
+    justify-content: center;
     border: 1px gray solid;
     padding: 5px;
 }
@@ -15,6 +16,7 @@ header {
 h1 {
     /* pick a font and a size */
     /* style it large in a nice font in the center of the document */
+    font-size: 120%;
 }
 
 h2 {
