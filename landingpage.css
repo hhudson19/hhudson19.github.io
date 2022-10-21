@@ -76,7 +76,7 @@ h2 {
     /* applies to div section in main page, could be multi use */
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 375px;
     height: 400px;
     margin: 40px;
     padding: 10px;
@@ -117,6 +117,7 @@ footer > div {
     /* items with class main need to be flex containers and */
     /* organize them side by side (the default) */
     display: flex;
+    flex-wrap: wrap;
     margin-top: 5%;
     margin-left: 12%;
     margin-right: 12%;
