@@ -1,106 +1,168 @@
-/* copied element organization from css Zen Garden default style v1.02
-  to start with; used my own values/fonts/colors */
-html {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  border: 1px red solid;
-  /* choose font */
-  font: 75% georgia, sans-serif;
-  /* pick a line height */
-  line-height: 1;
-  /* font color */
-  color: #555753;
-  /* background color */
-  background: tan;
+  /* set text here */
+  font-family: baskerville, serif;
+  /* border: 5px red solid; */
   margin: 0;
-  padding: 0;
+  background-color: #fffcfa;
 }
-
-p {
-  border: 1px red solid;
-  margin-top: 0;
-  /* spreads text across any given width */
-  text-align: justify;
+/* general css things */
+[role="article"] {
+  /* background-color: lightgray; */
+  padding-right: 60px;
+  padding-left: 20px;
 }
-
 h3 {
-  /* pick a font for the headers */
-  margin-bottom: 0;
-  color: blue;
+  color: #420420;
+}
+p {
+  color: #696969;
 }
 
+abbr {
+  /* remove underlines? */
+  color: #ff6970;
+}
 a:link {
-  font-weight: bold;
+  color: #420420;
   text-decoration: none;
-  color: pink;
 }
+
+
 a:visited {
-  font-weight: bold;
   text-decoration: none;
-  color: lightpink;
+  color: #ff6970;
 }
+
 a:hover, a:focus, a:active {
   text-decoration: underline;
-  color: red;
-}
-abbr {
-  border-bottom: none;
-  color: yellow;
-}
-
-.page-wrapper {
-  /* this is cool, I didn't know you could do this */
-  /*background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left;*/
-  padding: 0 200px 0 200px; 
-  margin: 0;
-  position: relative;
-}
-
-.intro {
-  /* sets the minimum width of the block item */
-  min-width: 400px;
-  width: 100%;
-}
-
-header h1 {
-  color: orange;
-}
-
-header h2 {
-  color: indigo;
+  color: #FF878d;
 }
 
 header {
-  height: 87px;
+  display: flex;
+  background-color: #696969;
+  padding-top: 120px;
+  padding-left: 300px;
+  position: relative;
+}
+h1 {
+  color: white;
+  /*border: 5px seagreen solid;*/
+  font-size: 250%;
+  margin-bottom: 0px;
+  position: absolute;
+  right: 70.5%;
+  bottom: 10px;
+}
+h2 {
+  color: white;
+  /* border: 5px lawngreen solid;*/
+  font-size: 150%;
+  margin-bottom: 0px;
+  position: absolute;
+  left: 30.5%;
+  bottom: 14px;
+}
+h2 abbr {
+  color: #ff878d;
 }
 
 .summary {
-  /* what does this do? */
-  clear: both;
-  border: 1px red solid;
+  /*border: 5px skyblue solid;*/
+  text-align: center;
+  background: #ff878d;
+}
+.summary abbr {
+  color: #696969;
+}
+.summary a:link {
+  color: #696969;
+}
+.summary a:hover, a:focus, a:active {
+  text-decoration: underline;
+  color: white;
+}
+.summary p {
+  color: white;
+  margin: 0px;
+  line-height: 1.5;
 }
 
-.summary p {
-  font: italic 1.1em/2.2 georgia;
+.preamble {
+  margin: 50px 280px 50px 175px;
+}
+
+.supporting {
+  line-height: 1.3;
+}
+.explanation {
+  /* border: 5px skyblue solid; */
+  margin: 0px 300px 50px 175px;
+}
+.participation {
+  /* border: 5px skyblue solid; */
+  margin: 0px 300px 50px 175px;
+}
+.benefits {
+  /* border: 5x skyblue solid; */
+  margin: 0px 300px 50px 175px;
+}
+.requirements {
+  /* border: 5px skyblue solid; */
+  margin: 0px 300px 50px 175px;
+}
+
+footer {
+  background-color: black;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+footer a {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer a:link {
+  color: white;
+}
+
+/* most of the sidebar stuff came from the original sample css */
+.sidebar {
+	margin-left: 600px; 
+	position: absolute; 
+	top: 0; 
+	right: 0;
+	}
+.sidebar .wrapper { 
+	/* font: 10px verdana, sans-serif; */
+	/* background-color: greenyellow; */
+  font-size: 100%;
+	padding: 10px;
+	margin-top: 200px; 
+  margin-right: 40px;
+	width: 250px; 
+  border-left: 2px black solid;
+	}
+.sidebar h3 {
+  padding: 0px;
 }
 
 .sidebar ul {
-  margin: 0;
-  padding: 0;
-}
-
+	margin: 0px 0px 0px 5px 0px;
+	padding: 0;
+	}
 .sidebar li {
-  background: grey;
-}
-
+	line-height: 1em;
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 10px;
+	list-style-type: none;
+	}
 .sidebar li a:link {
-  color: khaki;
-}
-
+	color: #ff878d;
+	}
 .sidebar li a:visited {
-  color: cadetblue;
-}
+	color: #B3AE94;
+	}
