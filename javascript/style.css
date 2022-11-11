@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {  border: 5px blue solid;
+}
+
+.game {
+  position: relative;
+  border: 5px black solid;
+  width: 301px;
+  display: grid;
+  grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+  grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+}
+
+
+.game-board {
+  position: absolute;
+  padding-left: 1px;
+  border: 5px green solid;
+  /*object-fit: contain;*/
+}
+
+.game > div {
+  //color: blue;
+}
+ 
+.play-button {
+  border: 5px pink solid;
+  background-color: #4caf50;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
