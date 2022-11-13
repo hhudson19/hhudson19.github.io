@@ -1,9 +1,23 @@
 body {
   display: flex;
+  flex-direction: column;
+  background: black;
+}
+
+header {
+  color: white;
+  display: flex;
   justify-content: center;
 }
 
-.grid {  border: 5px blue solid;
+.game-container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid { 
+  border: 0px blue solid;
+  position: relative;
 }
 
 .game {
@@ -18,19 +32,21 @@ body {
 
 .game-board {
   position: absolute;
-  padding-left: 1px;
-  border: 5px green solid;
+  top: 6px;
+  left: 6%;
+  border: 0px green solid;
   /*object-fit: contain;*/
-}
-
-.game > div {
-  //color: blue;
 }
  
 .play-button {
-  border: 5px pink solid;
-  background-color: #4caf50;
+  background-color: pink;
+  margin: 10px;
   font-size: 16px;
   padding: 15px 30px;
   cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }
