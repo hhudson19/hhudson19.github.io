@@ -4,44 +4,6 @@
 // must have clear and consistent theme
 // must be uploaded to github
 
-// thisdiv.style.setProperty("background-color", "yellow");
-/*
-class Board {  
-  constructor(ctx) {
-    this.ctx = ctx;
-    this.grid = this.getEmptyBoard();
-    this.piece = new Piece(ctx);    
-  }
-}
-*/
-
-// define tetrominoes
-class Piece {  
-  constructor() {
-    let shape = [
-      [[0][0][0]],
-      [[1][1][1]],
-      [[0][0][1]]
-    ];
-  }
-
-  printShape() {
-    console.log(this.shape);
-  }
-/*
-  draw() {
-    this.ctx.fillStyle = this.color;
-    this.shape.forEach((row, y) => {  
-      row.forEach((value, x) => {  
-        if (value > 0) {  
-          this.ctx.fillRect(this.x + x, this.y + y, 1, 1);  
-        }  
-      });  
-    });  
-  }*/
-}
-
-
 
 function initializeBoard(width, height) {
   // initialize divs and style with css
@@ -56,50 +18,134 @@ function initializeBoard(width, height) {
   console.log(thisdiv);
 }
 
-let canvas = document.getElementsByClassName("game-board")[0];
-let context = canvas.getContext("2d");
+function draw(context, color, x, y) {
+  // draw piece on the canvas at the given position
+  context.fillStyle = color;
+  context.fillRect(x, y, 30, 30);
+}
 
-context.fillStyle = "orange";
-context.fillRect(30, 30, 30, 30);
+function gamePlay() {
+  
+  let canvas = document.getElementsByClassName("game-board")[0];
+  let context = canvas.getContext("2d");
+  
+  draw(context, "purple", 0, 575);
+  draw(context, "purple", 30, 575);
+  draw(context, "purple", 60, 575);
+  draw(context, "purple", 30, 545);
 
-context.fillStyle = "blue";
-context.fillRect(60, 30, 30, 30);
+  setTimeout(function() {
+    draw(context, "red", 90, 575);
+    draw(context, "red", 120, 575);
+    draw(context, "red", 60, 545);
+    draw(context, "red", 90, 545);
+  }, 1000);
 
-context.strokeStyle = "royalblue";
-context.lineWidth = 6; 
-context.strokeRect(120, 30, 100, 40);
 
-/*
-context.beginPath();
-context.moveTo(100, 10);
-context.lineTo(50, 90);
-//context.moveTo(150, 90);
-context.lineTo(150, 10);
-context.closePath();
-context.fillStyle = "pink";
-context.fill();
-context.lineWidth = 5;
-context.strokeStyle = "purple";
-context.stroke();
-*/
+  setTimeout(function() {
+    draw(context, "lightblue", 150, 575);
+    draw(context, "lightblue", 180, 575);
+    draw(context, "lightblue", 210, 575);
+    draw(context, "iightblue", 240, 575);
+  }, 1500);
+
+  setTimeout(function() {
+    draw(context, "orange", 30, 515);
+    draw(context, "orange", 60, 515);
+    draw(context, "orange", 30, 484);
+    draw(context, "orange", 30, 453.5);
+  }, 2000);
+
+  setTimeout(function() {
+    draw(context, "lightgreen", 30, 423);
+    draw(context, "lightgreen", 30, 392);
+    draw(context, "lightgreen", 60, 392);
+    draw(context, "lightgreen", 60, 362);
+  }, 2500);
+
+  setTimeout(function() {
+    draw(context, "blue", 60, 332);
+    draw(context, "blue", 60, 302);
+    draw(context, "blue", 90, 332);
+    draw(context, "blue", 120, 332);
+  }, 3000);
+  
+  setTimeout(function() {
+    draw(context, "red", 150, 332);
+    draw(context, "red", 180, 332);
+    draw(context, "red", 120, 302);
+    draw(context, "red", 150, 302);
+  }, 3500);
+
+  setTimeout(function() {
+    draw(context, "lightblue", 150, 272);
+    draw(context, "lightblue", 150, 242);
+    draw(context, "lightblue", 150, 212);
+    draw(context, "iightblue", 150, 184);
+  }, 4000);
+
+  setTimeout(function() {
+    draw(context, "yellow", 150, 154);
+    draw(context, "yellow", 120, 154);
+    draw(context, "yellow", 150, 124);
+    draw(context, "yellow", 120, 124);
+    // THIS LINE is important
+    context.translate(60, -80);
+  }, 4500);
+  
+
+  setTimeout(function() {
+    draw(context, "purple", 0, 575);
+    draw(context, "purple", 30, 575);
+    draw(context, "purple", 60, 575);
+    draw(context, "purple", 30, 545);
+  }, 5000)
+
+  setTimeout(function() {
+    draw(context, "red", 90, 575);
+    draw(context, "red", 120, 575);
+    draw(context, "red", 60, 545);
+    draw(context, "red", 90, 545);
+  }, 5500);
+
+
+  setTimeout(function() {
+    draw(context, "lightblue", 150, 575);
+    draw(context, "lightblue", 180, 575);
+    draw(context, "lightblue", 210, 575);
+    draw(context, "iightblue", 240, 575);
+  }, 6000);
+
+  setTimeout(function() {
+    draw(context, "orange", 30, 515);
+    draw(context, "orange", 60, 515);
+    draw(context, "orange", 30, 484);
+    draw(context, "orange", 30, 453.5);
+  }, 6500);
+
+  setTimeout(function() {
+    draw(context, "lightgreen", 30, 423);
+    draw(context, "lightgreen", 30, 392);
+    draw(context, "lightgreen", 60, 392);
+    draw(context, "lightgreen", 60, 362);
+  }, 7000);
+
+  // prompt game over
+  setTimeout(function() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.translate(-60, 80);
+    context.clearRect(0, 0, canvas.width, canvas.height);
+  }, 15000);
+  
+}
 
 
 // need to know width and height of board
 const width = 10;
 const height = 20;
-const divSize = 30;
 initializeBoard(width, height);
 
 
-let tetrominoe = new Piece;
-tetrominoe.printShape;
 
-// define behavior of tetrominoies
+document.getElementsByClassName("play-button")[0].addEventListener("click", gamePlay);
 
-// define row removal/points behavior
-
-// define pre viewing tetrominoes
-
-// define saving a tetrominoe
-
-// define timing of tetrominoes/falling/speeding up
