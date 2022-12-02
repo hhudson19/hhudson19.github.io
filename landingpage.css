@@ -122,6 +122,7 @@ footer > div {
     margin-left: 12%;
     margin-right: 12%;
     margin-bottom: 5%;
+    justify-content: center;
 }
 
 footer {
