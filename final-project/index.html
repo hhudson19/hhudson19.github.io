@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <!-- h1 from https://tobiasahlin.com/moving-letters/#11 -->
+    <h1 class="page_title">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">Hannah's Book Recommendations</span>
+      </span>
+    </h1>
+  </header>
+
+  <script src="header.js"></script>
+
+
+
+  <div class="about">
+    <p>As a reader, I know it's hard to find great books to read, especially since there are so many choices out there. So, I've put together a collection of my favorite ones! These are books that I've enjoyed reading and that I think others would enjoy. Books are listed loosely by genre.</p>
+  </div>
+
+  <div class="section3">
+    <form name="genrelist" class="genrelist" id="genrelist">
+      Select a genre: 
+      <select name="genre" class= "genre" id="genre" onchange="updateList(this)">
+        <option value="featured.html" selected="selected"> </option>
+        <option value="surprise.html">Suprise Me</option>
+        <option value="mystery.html">Mystery</option>
+        <option value="fairytale.html">Fairy Tales</option>
+        <option value="adventure.html">Adventure</option>
+      </select>
+    </form> 
+  </div>
+
+  <div class="section4" id="section4">
+    <!-- content goes here from javascript -->
+  </div>
+
+  <footer>
+    <button id="pressme">PRESS ME</button>
+    <div id="quote"></div>
+  </footer>
+  <script src="script.js"></script>
+  
+  
+</body>
+
+</html>
