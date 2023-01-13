@@ -167,6 +167,15 @@ a:visited {
   margin: 10%;
 }
 
+.body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.body > p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
 
 /* styling for header from: https://tobiasahlin.com/moving-letters/#11 */
 /*
