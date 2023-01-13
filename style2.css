@@ -177,6 +177,13 @@ a:visited {
   margin-bottom: 40px;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 0px;
+}
+
 /* styling for header from: https://tobiasahlin.com/moving-letters/#11 */
 /*
 .page_title {
