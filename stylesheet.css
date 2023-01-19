@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Nanum+Gothic&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  background: #fefefa;
+  font-size: 100%;
+}
+
+/* general styling for h2, blog post titles + bog post subtitles */
+h2 {
+    /* applies to all h2 text */
+    font-size: 120%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header styling */
+header {
+  background-color: #8a9a5b;
+  font-family: 'Prata', cursive;
+  color: white;
+  border-bottom: 8px double black;
+}
+
+header > h1 {
+  font-size: 4.0em;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding-top: 30px;
+  border-bottom: 8px double black;
+}
+
+header > h2 {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 5px;
+}
+
+/* home page about styling */
+.about {
+  font-size: 1.01em;
+  display: flex;
+  margin-top: 40px;
+  margin-left: 26%;
+  margin-right: 26%;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* footer styling */
+footer {
+  font-size: .9em;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+footer > div {
+  display: flex;
+  margin: 10px;
+  margin-top: 12px;
+  border-bottom: 2px solid #8a9a5b;
+}
+
+footer > div > div {
+  /*padding: 10px;*/
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+footer > div > div > h3 {
+  font-size: 1em;
+  padding: 0px;
+  margin: 0px;
+}
+
+footer > div > div > ul {
+  padding-left: 18px;
+  margin-top: 5px;
+}
+
+/* home page main styling */
+.main {
+    /* items with class main need to be flex containers and */
+    /* organize them side by side (the default) */
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* styling for blog links, columndiv is the largest container for the blog decoration */
+.columndiv {
+  border: 2px solid black;
+  display: flex;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.bloglink:hover > .columntext {
+  color: #8a9a5b;
+  text-decoration: underline;
+}
+
+/* <a></a> for the homepage blog links */
+.bloglink {
+  display: flex;
+  color: #696969;
+}
+
+.bloglink:link {
+  text-decoration: none;
+}
+.bloglink:visited {
+  text-decoration: none;
+  color: #696969;
+}
+
+.columntext {
+    border: 2px solid black;
+    width: 200px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.columntext > p {
+    /* all p in the website */
+    color: #696969;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* contains the blog link image */
+.image {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+/* is the blog link image */
+.icon {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* styling for the home button link */
+.home {
+  padding: 5px;
+  font-size: 1.0em;
+  color: #8a9a5b
+}
+
+.home:hover {
+  color: blue;
+}
+
+/* styling for blog posts */
+.byline {
+  font-weight: bold;
+}
+.blog {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.blog > h1 {
+  margin: 0px;
+  text-align: left;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.body {
+  margin-left: 0%;
+  margin-right: 15%;
+}
+
+.body > p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
