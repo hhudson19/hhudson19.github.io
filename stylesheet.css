@@ -203,3 +203,8 @@ footer > div > div > ul {
   margin-bottom: 20px;
   line-height: 1.5;
 }
+
+.verse {
+  display: flex;
+  justify-content: center;
+}
